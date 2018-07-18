@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!--bootstrap-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap-table/bootstrap-table-zh-CN.min.js" ></script>
+		<script type="text/javascript" src="plugins/bootstrap-table/bootstrap-table.min.js" ></script>
+		<link rel="stylesheet" href="css/table.css" />
+		<script type="text/javascript" src="js/transaction_details.js" ></script>
+		<script type="text/javascript" src="js/mynav.js" ></script>
+	</head>
+	<style>
+		th,td{
+			text-align: left;
+		}
+		.table > tbody > tr > td{
+			padding-left: 42px;
+		}
+	</style>
+	<body>
+		<div class="content_box">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			</nav>
+			<div class="content_div">
+				<div class="content_top">
+					<div class="table_left">交易详情：<span id="transaction"></span></div>
+					<div class="table_right">
+					</div>
+				</div>
+				<div class="table-responsive" style="overflow-x: inherit;">
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr style="background:#F3F3F3;">
+								<th colspan="3" style="padding-left:42px;">交易信息</th>
+							</tr>
+						</thead>
+						<tbody style="text-align: center;" id="tbody">
+							<tr>
+								<td colspan="3" style="padding-left:42px;">未获取到数据</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

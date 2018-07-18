@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="css/index.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/echarts.js"></script>
+		<script type="text/javascript" src="js/mynav.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<title>首页</title>
+	</head>
+
+	<body>
+		<!-- 顶部导航 -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<!--<div class="container content">
+      <span class="logo">
+          <img src="img/神行区块链logo.png" alt="">
+        </span>
+      <span class="btn-box">
+        <div class="btn-group">
+          <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              首页
+          </button>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              吃货宝
+            <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-menu-li">
+          <a href="#"><span class="icon">
+                    <img src="icon/icon-caipin.png" alt="">
+                  </span> 菜品
+                </a>
+        </li>
+        <li class="dropdown-menu-li">
+          <a href=""><span class="icon">
+                  <img src="icon/icon-dingdan.png" alt="">
+                </span> 订单
+              </a>
+        </li>
+        <li class="dropdown-menu-li">
+          <a href=""><span class="icon">
+                  <img src="icon/icon-fenxi.png" alt="">
+                </span> 分析
+              </a>
+        </li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            区块链
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-menu-li">
+          <a href=""><span class="icon">
+              <img src="icon/icon-qukuai.png" alt="">
+            </span> 区块
+          </a>
+        </li>
+        <li class="dropdown-menu-li">
+          <a href=""><span class="icon">
+              <img src="icon/icon-jiaoyi.png" alt="">
+            </span> 交易
+          </a>
+        </li>
+      </ul>
+    </div>
+    </span>
+    </div>-->
+		</nav>
+		<div class="container" style="background: #F7F7F7;padding-bottom: 50px;">
+			<!-- 无用标注 -->
+			<div class="container">
+				<div class="PS">
+					<h5>神行区块链项目：<a target="_blank" href="https://github.com/BeansChainProject">https://github.com/BeansChainProject</a></h5>
+				</div>
+			</div>
+			<!-- 图片展示区 -->
+			<div class="container">
+				<div class="picture-box">
+					<div class="picture-box-left" id="picture-box-left">
+						<!-- <div class="picture-box-left-databox">
+          <span class="detailed-data">
+            <div class="detailed-data-member" >
+              <img src="img/圆.png" alt="">
+            </div>
+            <div class="detailed-data-member">
+              12331</br>
+              菜品总数
+            </div>
+          </span>
+          <span class="detailed-data">
+            <div class="detailed-data-member" >
+              <img src="img/圆.png" alt="">
+            </div>
+            <div class="detailed-data-member">
+              12331</br>
+              区块高度
+            </div>
+          </span>
+          <span class="detailed-data">
+            <div class="detailed-data-member" >
+              <img src="img/圆.png" alt="">
+            </div>
+            <div class="detailed-data-member">
+              12331</br>
+              菜品均价
+            </div>
+          </span>
+        </div>
+        <div class="picture-box-left-databox">
+          <span class="detailed-data">
+            <div class="detailed-data-member" >
+              <img src="img/圆.png" alt="">
+            </div>
+            <div class="detailed-data-member">
+              12331</br>
+              菜品总数
+            </div>
+          </span>
+        </div>
+        <div class="picture-box-left-databox-right">
+          <span class="detailed-data-right">
+            <div class="detailed-data-member-right" >
+              <img src="img/五角星-订单总数.png" alt="">
+            </div>
+            <div class="detailed-data-member-right">
+              12331
+              <h5 style="text-align:center;">订单总数</h5>
+            </div>
+          </span>
+          <span class="detailed-data-right">
+            <div class="detailed-data-member-right" >
+              <img src="img/五角星-订单总价.png" alt="">
+            </div>
+            <div class="detailed-data-member-right">
+              12331
+              <h5 style="text-align:center;">订单总数</h5>
+            </div>
+          </span>
+        </div> -->
+					</div>
+					<div class="picture-box-right" id="picture-box-right">
+					</div>
+				</div>
+			</div>
+			<!-- 数据展示区 -->
+			<div class="container">
+				<div class="show-box">
+					<div class="show-box-left">
+						<div class="title">
+							<span>
+            <img src="icon/icon-qukuai.png" alt="">
+            区块
+          </span>
+							<span><a href="block.html">查看全部</a></span>
+						</div>
+						<div class="block-table">
+							<ul class="block-ul" id="block-ul">
+								<!-- <li class="block-list">
+              <span class="block-num">
+                <span>
+                  <img src="img/icon-qukuai-底图.png" alt="">
+                </span>
+              <span>NO.1222</span>
+              </span>
+              <span class="block-data">
+                <h4>共250单交易</h4>
+                <h5 class="time">22:17:30</h5>
+                <h5 class="time">2018-06-18</h5>
+              </span>
+            </li>
+            <li class="block-list">
+              <span class="block-num">
+                <span>
+                  <img src="img/icon-qukuai-底图.png" alt="">
+                </span>
+              <span>NO.1222</span>
+              </span>
+              <span class="block-data">
+                <h4>共250单交易</h4>
+                <h5 class="time">22:17:30</h5>
+                <h5 class="time">2018-06-18</h5>
+              </span>
+            </li>
+            <li class="block-list">
+              <span class="block-num">
+                <span>
+                  <img src="img/icon-qukuai-底图.png" alt="">
+                </span>
+              <span>NO.1222</span>
+              </span>
+              <span class="block-data">
+                <h4>共250单交易</h4>
+                <h5 class="time">22:17:30</h5>
+                <h5 class="time">2018-06-18</h5>
+              </span>
+            </li>
+            <li class="block-list">
+              <span class="block-num">
+                <span>
+                  <img src="img/icon-qukuai-底图.png" alt="">
+                </span>
+              <span>NO.1222</span>
+              </span>
+              <span class="block-data">
+                <h4>共250单交易</h4>
+                <h5 class="time">22:17:30</h5>
+                <h5 class="time">2018-06-18</h5>
+              </span>
+            </li> -->
+							</ul>
+						</div>
+					</div>
+					<div class="show-box-right">
+						<div class="title">
+							<span>
+            <img src="icon/icon-jiaoyi.png" alt="">
+            交易
+          </span>
+							<span><a href="trading_data.html">查看全部</a></span>
+						</div>
+						<div class="transaction-table">
+							<ul class="transaction-ul" id="transaction-ul">
+								<!-- <li class="transaction-list">
+              <h4 class="transaction-data">TX# 0X22ACD56EBF</h4>
+              <h5 class="transaction-data">订单价格 500Yuan</h5>
+              <h5 class="transaction-data">2018-06-18 22:17:30</h5>
+            </li>
+            <li class="transaction-list">
+              <h4 class="transaction-data">TX# 0X22ACD56EBF</h4>
+              <h5 class="transaction-data">订单价格 500Yuan</h5>
+              <h5 class="transaction-data">2018-06-18 22:17:30</h5>
+            </li>
+            <li class="transaction-list">
+              <h4 class="transaction-data">TX# 0X22ACD56EBF</h4>
+              <h5 class="transaction-data">订单价格 500Yuan</h5>
+              <h5 class="transaction-data">2018-06-18 22:17:30</h5>
+            </li>
+            <li class="transaction-list">
+              <h4 class="transaction-data">TX# 0X22ACD56EBF</h4>
+              <h5 class="transaction-data">订单价格 500Yuan</h5>
+              <h5 class="transaction-data">2018-06-18 22:17:30</h5>
+            </li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+	</script>
+
+</html>
