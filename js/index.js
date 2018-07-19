@@ -75,7 +75,7 @@ $(function() {
           "<img src='img/圆.png' alt=''>" +
           "</div>" +
           "<div class='detailed-data-member'><span class='picture-num'>" + data.blockNumber + "</span></br>" +
-          "块的高度" +
+          "区块高度" +
           "</div>" +
           "</span>" +
           "<span class='detailed-data'>" +
