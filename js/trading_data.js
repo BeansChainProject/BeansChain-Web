@@ -49,7 +49,7 @@ var tableL = function() {
 						html += '<tr><td colspan="5">未获取到数据</td></tr>'
 					}
 					for(var i = 0; i < result.length;i++){
-						html += '<tr><td><a href="transaction_details.html?hash='+result[i]['hash']+'&timestamp='+ result[i]['timestamp']+'">'+result[i]['hash']+'</a></td><td>'+result[i]['timestamp']+'</td><td>'+result[i]['blockNumber']+'</td><td>'+result[i]['transactionPrice']+'</td><td>'+result[i]['dishesNumber']+'</td></tr>'
+						html += '<tr><td><a href="transaction_details.html?hash='+result[i]['hash']+'&timestamp='+ result[i]['timestamp']+'">'+result[i]['hash']+'</a></td><td>'+result[i]['timestamp']+'</td><td>'+result[i]['blockNumber']+'</td><td>'+result[i]['transactionPrice']+'</td><td>'+result[i]['dishesNumer']+'</td></tr>'
 					}
                 	$('#tbody').html(html);
                 	$('#tbody').find('tr').find('td').each(function(){
@@ -60,10 +60,10 @@ var tableL = function() {
                 	})
                 	var result1 = data.data.total;
 					if(result1 < 1) return false;
-					var total = parseInt((result1 - 1) / page_size + 1);
-					$('#number').val(page);
-					instance.setPageBtn(page, total);
-					console.log(page, total)
+//					var total = parseInt((result1 - 1) / page_size + 1);
+//					$('#number').val(page);
+//					instance.setPageBtn(page, total);
+//					console.log(page, total)
                 }else{
                 	if( data['data'] == null){
 						html += '<tr><td colspan="5">未获取到数据</td></tr>'

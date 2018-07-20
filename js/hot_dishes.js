@@ -19,7 +19,7 @@ var tableL = function() {
 	this.tableList = function(a){
 		var info = {
 			"pageNumber": a,
-			"pageSize": page_size,
+			"pageSize": 100,
 		};
 		console.log(info)
 		$.ajax({
@@ -39,14 +39,14 @@ var tableL = function() {
 						html += '<tr><td colspan="7">未获取到数据</td></tr>'
 					}
 					for(var i = 0; i < result.length;i++){
-						html += '<tr><td>'+result[i]['dishName']+'</td><td>'+result[i]['restaurantNum']+'</td><td>'+result[i]['perPrice']+'</td><td>'+result[i]['floorPrice']+'</td><td>'+result[i]['ceilPrice']+'</td><td>'+result[i]['saleNum']+'</td>'
+						html += '<tr><td>'+result[i]['dishName']+'</td><td>'+result[i]['perPrice']+'</td><td>'+result[i]['floorPrice']+'</td><td>'+result[i]['ceilPrice']+'</td><td>'+result[i]['saleNum']+'</td>'
 					}
                 	$('#tbody').html(html);
                 	var result1 = data.data.total;
 					if(result1 < 1) return false;
-					var total = parseInt((result1 - 1) / page_size + 1);
-					$('#number').val(page);
-					instance.setPageBtn(page, total);
+//					var total = parseInt((result1 - 1) / page_size + 1);
+//					$('#number').val(page);
+//					instance.setPageBtn(page, total);
 					console.log(page, total)
                 }else{
                 	if( data['data'] == null){

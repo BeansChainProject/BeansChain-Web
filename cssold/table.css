@@ -1,0 +1,79 @@
+body{
+	color: #666666 !important;
+	font-family: PingFangSC-Regular !important;
+}
+.content_div{
+	width: 1200px;
+	margin: 0 auto;
+}
+.content_top{
+	width:100%;
+	height:50px;
+	background:rgba(77,152,245,1);
+	padding: 0px 42px;
+	vertical-align: middle;
+}
+.table_left{
+	height:24px;
+	font-size:20px;
+	font-family:PingFangSC-Regular;
+	color:rgba(255,255,255,1);
+	float: left;
+	line-height:50px ;
+}
+.table_right{
+	float: right;
+	padding: 14px 0;
+}
+.table_right>button{
+	width:64px;
+	height:24px;
+	background:rgba(255,255,255,1);
+	vertical-align: middle;
+	font-size:14px;
+	border: none;
+	float: left;
+}
+#number,#size{
+	height:24px;
+	border: none;
+	float: left;
+	margin: 0px 3px;
+}
+th ,td{
+    text-align: center;
+    font-size: 14px;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: inherit !important;
+}
+.dropdown-menu > li > a{
+	padding: 3px 0px;
+}
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+    border-bottom-width: 1px;
+}
+.table-responsive>table{
+  table-layout:fixed;
+}
+.table tbody tr td,#transaction{
+      overflow: hidden; 
+      text-overflow:ellipsis;  
+      white-space: nowrap; 
+ }
+#transaction{
+	width: 150px;
+	position:fixed;
+}
+@media screen and (max-width: 1200px){
+    .content_div{
+    	padding: 0 10px;
+    	width: 100%;
+    }
+}
+@media screen and (max-width: 360px){
+    .content_top{
+    	padding: 0px 10px;
+    }
+}
+
